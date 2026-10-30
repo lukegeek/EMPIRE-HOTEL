@@ -21,7 +21,7 @@ app.use((req,res,next)=>{
  if(req.method!=='GET'&&req.method!=='HEAD'&&req.method!=='OPTIONS'){
   const origin=req.headers.origin;
   if(origin){let parsed;try{parsed=new URL(origin)}catch{return res.status(403).json({error:'Origine refusée'})}
-   if(!['localhost','127.0.0.1'].includes(parsed.hostname)||parsed.port!==String(PORT)||parsed.protocol!=='http:')return res.status(403).json({error:'Origine refusée'});
+   if(!['localhost','0.0.0.0'].includes(parsed.hostname)||parsed.port!==String(PORT)||parsed.protocol!=='http:')return res.status(403).json({error:'Origine refusée'});
   }
   if(req.path.startsWith('/api/')&&req.headers['content-type']?.split(';')[0]!=='application/json')return res.status(415).json({error:'Contenu JSON requis'});
  }
