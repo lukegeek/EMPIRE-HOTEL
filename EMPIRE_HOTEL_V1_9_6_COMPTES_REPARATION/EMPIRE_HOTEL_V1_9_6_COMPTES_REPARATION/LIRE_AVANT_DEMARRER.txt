@@ -1,0 +1,8 @@
+EMPIRE HOTEL V1.2
+1) Extraire le ZIP dans un NOUVEAU dossier (ne pas melanger avec NEXORIS).
+2) Ouvrir ce dossier dans Visual Studio Code.
+3) Dans le terminal : npm install puis npm start
+4) Ouvrir http://localhost:4177 (PAS localhost:3000).
+Si un ancien jeu s'ouvre sur localhost:3000, c'est un autre serveur deja en marche.
+Vous pouvez aussi lancer DEMARRER.bat.
+Cette version est locale, le classement mondial n'est pas encore en ligne.
