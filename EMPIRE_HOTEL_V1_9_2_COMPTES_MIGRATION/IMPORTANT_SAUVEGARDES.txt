@@ -1,0 +1,11 @@
+EMPIRE HOTEL V1.7 - COMPTES PERSISTANTS
+
+Le jeu stocke maintenant ses comptes dans le dossier EMPIRE_HOTEL_SAUVEGARDES, situe A COTE du dossier du jeu.
+Exemple : Documents\HOTEL\EMPIRE_HOTEL_SAUVEGARDES\players.json
+
+Lors du premier lancement, le jeu cherche automatiquement les fichiers data\players.json dans les anciennes versions situees dans le meme dossier parent et importe les comptes trouves.
+IMPORTANT : si vos anciens dossiers ont ete supprimes avec leurs sauvegardes, il est impossible de recuperer ces comptes sans une copie de sauvegarde.
+Pour les prochaines versions, decompressez le ZIP dans le MEME dossier parent (Documents\HOTEL), sans supprimer EMPIRE_HOTEL_SAUVEGARDES.
+Pour forcer un emplacement permanent, definissez EMPIRE_HOTEL_DATA_DIR avant npm start.
+Les fichiers .bak sont des copies de secours. Sauvegardez regulierement le dossier permanent sur un autre support.
+Lancer npm install puis npm start. Adresse : http://localhost:4177
