@@ -1,0 +1,9 @@
+EMPIRE HÔTEL V1.8 — SÉCURITÉ APPLICATION LOCALE
+
+Protections ajoutées : limitation de débit (240 requêtes/minute/IP), verrouillage temporaire après 8 échecs de connexion par pseudo et IP (15 minutes), limitation de création de comptes, validation JSON et taille maximale 32 Ko, en-têtes anti-clickjacking et anti-MIME sniffing, politique CSP, contrôle de l’origine des requêtes, expiration des sessions après 24 h. Le serveur écoute uniquement 127.0.0.1:4177.
+
+Les sauvegardes restent dans le dossier EMPIRE_HOTEL_SAUVEGARDES à côté du jeu. Ne le supprimez pas.
+
+Ce module est un pare-feu applicatif basique, pas un pare-feu réseau Windows ni une garantie anti-piratage. Pour rendre le jeu public, utiliser HTTPS, une base de données transactionnelle, de vrais comptes persistants avec sessions stockées côté serveur, journaux d'audit, surveillance et tests de sécurité.
+
+INSTALLATION : npm install puis npm start. Adresse : http://localhost:4177
